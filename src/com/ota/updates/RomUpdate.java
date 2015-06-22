@@ -178,7 +178,7 @@ public class RomUpdate implements Constants {
         editor.putString(WEBSITE, website);
         editor.commit();
     }
-    
+
     public static void setDeveloper(Context context, String developer) {
     	SharedPreferences.Editor editor = getPrefs(context).edit();
         editor.putString(DEVELOPER, developer);

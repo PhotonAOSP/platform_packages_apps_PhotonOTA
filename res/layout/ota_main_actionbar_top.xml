@@ -18,7 +18,7 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_gravity="end" >
-    
+
     <ImageButton
         android:id="@+id/btn_main_changelog"
         style="?android:attr/actionButtonStyle"
