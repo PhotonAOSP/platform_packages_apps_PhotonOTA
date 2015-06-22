@@ -18,7 +18,8 @@ include $(CLEAR_VARS)
 ifndef TARGET_ARCH_ABI
 TARGET_ARCH_ABI := armeabi-v7a
 endif
-
+CFLAGS = -Wno-sign-compare
+CPPFLAGS = -Wno-sign-compare
 # Cardview Dir
 cardview_dir := ../../../frameworks/support/v7/cardview
 
@@ -32,7 +33,7 @@ LOCAL_AAPT_FLAGS := \
 	--auto-add-overlay \
 	--extra-packages android.support.v7.cardview
 
-LOCAL_PACKAGE_NAME := PhotonOTA
+LOCAL_PACKAGE_NAME := OTAUpdates
 
 LOCAL_MODULE_TAGS := optional
 
